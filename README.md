@@ -1,11 +1,11 @@
-About r-tsstudio
-================
+About r-tsstudio-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-tsstudio-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/RamiKrispin/TSstudio
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-tsstudio-feedstock/blob/main/LICENSE.txt)
 
 Summary: Provides a set of tools for descriptive and predictive analysis of time series data. That includes functions for interactive visualization of time series objects and as well utility functions for automation time series forecasting.
 
