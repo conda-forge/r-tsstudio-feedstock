@@ -1,4 +1,4 @@
-{% set version = '0.1.6' %}
+{% set version = "0.1.7" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/TSstudio_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/TSstudio/TSstudio_{{ version }}.tar.gz
-  sha256: 9a6c68b082163e05cf332aec2365850a9b7732afbf172160cb4225f63ad185e4
+  sha256: 8071f22720fe5a8d913dc3698d24e3b27d9978207fff9f73f2d4de3ece0920e5
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -73,12 +73,10 @@ test:
 about:
   home: https://github.com/RamiKrispin/TSstudio
   license: MIT
-  summary: Provides a set of tools for descriptive and predictive analysis of time series data.
-    That includes functions for interactive visualization of time series objects and
-    as well utility functions for automation time series forecasting.
+  summary: Provides a set of tools for descriptive and predictive analysis of time series data. That includes functions for interactive visualization of time series objects and as well utility functions for automation time series forecasting.
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
