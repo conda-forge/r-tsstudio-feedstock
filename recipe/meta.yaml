@@ -1,6 +1,5 @@
 {% set version = "0.1.7" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-tsstudio
@@ -13,8 +12,7 @@ source:
   sha256: 8071f22720fe5a8d913dc3698d24e3b27d9978207fff9f73f2d4de3ece0920e5
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
